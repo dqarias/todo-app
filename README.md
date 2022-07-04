@@ -1,10 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians
+# Todo App
 
-> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-> - Make simple calculations.
-> - Read a random math-related quote.
+> "To Do App" is a website built with React following the React Tutorial From Scratch: A Step-by-Step Guide (2021)
 
 ## Built With
 
@@ -23,7 +21,7 @@ To get a local copy up and running follow these simple steps.
 
  **Step 1: Clone this repo locally using git**
 - Create a folder in your local machine
-- Open your console in your folder and run this command: `https://github.com/dqarias/Leaderboard.git`
+- Open your console in your folder and run this command: `https://github.com/dqarias/todo-app.git`
 - Alternatively, you can just download the complete zip file and extract the folder in your directory
 
  **Step 2: Run in your project directory**
