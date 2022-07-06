@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Header from './Header';
@@ -5,6 +6,12 @@ import InputTodo from './InputTodo';
 import TodoList from './TodoList';
 
 const TodoContainer = () => {
+  function getInitialTodos() {
+    const temp = localStorage.getItem('todos');
+    const savedTodos = JSON.parse(temp);
+    return savedTodos || [];
+  }
+
   const [todos, setTodos] = useState(getInitialTodos());
 
   const handleChange = (id) => {
@@ -50,12 +57,6 @@ const TodoContainer = () => {
       }),
     );
   };
-
-  function getInitialTodos() {
-    const temp = localStorage.getItem('todos');
-    const savedTodos = JSON.parse(temp);
-    return savedTodos || [];
-  }
 
   useEffect(() => {
     const temp = JSON.stringify(todos);
