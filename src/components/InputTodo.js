@@ -22,9 +22,9 @@ const InputTodo = ({ addTodoProps }) => {
       setInputText({
         title: '',
       });
-    } else {
+    } /* else {
       alert('Please write item');
-    }
+    } */
   };
 
   return (

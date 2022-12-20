@@ -20,7 +20,7 @@ const TodoItem = ({
   };
 
   useEffect(() => () => {
-    console.log('Cleaning up...');
+    /* console.log('Cleaning up...'); */
   }, []);
 
   const completedStyle = {
